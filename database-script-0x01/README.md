@@ -1,4 +1,4 @@
-# Airbnb Database Schema
+
 
 This directory contains the SQL scripts for creating the Airbnb clone database schema based on the provided ERD requirements.
 
@@ -12,6 +12,9 @@ The database schema consists of the following tables:
 4. `payments` - Stores payment transactions
 5. `reviews` - Stores property reviews
 6. `messages` - Stores communication between users
+
+## Schema Design
+![Schema Design](schema.png)# Airbnb Database Schem
 
 ## Features
 
@@ -62,19 +65,8 @@ The database schema consists of the following tables:
 
 ## Indexes
 - Users: email
-- Properties: host_id
 - Bookings: property_id, user_id
 - Payments: booking_id
-- Reviews: property_id, user_id
-- Messages: sender_id, recipient_id
-
-## Usage
-
-To create the database schema:
-
-```bash
-psql -U your_username -d your_database -f schema.sql
-```
 
 ## Notes
 

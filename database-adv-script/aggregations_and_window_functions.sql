@@ -44,8 +44,9 @@ SELECT
     property_id,
     property_name,
     total_bookings,
+    ROW_NUMBER() OVER (ORDER BY total_bookings DESC) AS booking_row_number,
     RANK() OVER (ORDER BY total_bookings DESC) AS booking_rank
 FROM 
     property_bookings
 ORDER BY 
-    booking_rank;
+    total_bookings DESC;

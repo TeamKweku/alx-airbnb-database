@@ -1,6 +1,6 @@
 # Airbnb Clone Database Project
 
-A comprehensive PostgreSQL database implementation for an Airbnb clone application. This project provides a robust database schema with sample seed data to support core Airbnb-like functionalities.
+A comprehensive SQL database implementation for an Airbnb clone application. This project provides a robust database schema with sample seed data to support core Airbnb-like functionalities.
 
 ## Project Structure
 
